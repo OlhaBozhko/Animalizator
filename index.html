@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#ffffff">
+  <title>Animalizator</title>
+  <link rel="icon" href="img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="container animalizator">
+    <div class="header">
+      <div class="header__logo js-home">
+        <p class="header__img"> <span>A</span></p>
+        <p class="header__name">Animalizator</p>
+      </div>
+      <div class="header__faq back-green-btn js-popup-open"><span>FAQ</span></div>
+    </div>
+    <div class="choice js-option">
+      <h1 class="choice__title">Выберите питомца для продолжения</h1>
+      <div class="choice__block">
+        <div class="choice__corner corner-box">
+          <div class="choice__animal animal js-choice" data-choice="bear"><img class="animal__img" alt="bear1"
+              src="img/bear-1.svg" data-choice="bear"><span data-choice="bear">Мишка</span></div>
+        </div>
+        <div class="choice__corner corner-box">
+          <div class="choice__animal animal js-choice" data-choice="cat"><img class="animal__img" alt="cat1"
+              src="img/cat-1.svg" data-choice="cat"><span data-choice="cat">Котенок</span></div>
+        </div>
+        <div class="choice__corner corner-box">
+          <div class="choice__animal animal js-choice" data-choice="dog"><img class="animal__img" alt="dog1"
+              src="img/dog-1.svg" data-choice="dog"><span data-choice="dog">Собачка</span></div>
+        </div>  
+        <div class="choice__corner corner-box">
+          <div class="choice__animal animal js-choice" data-choice="tiger"><img class="animal__img" alt="tiger1"
+              src="img/tiger-1.svg" data-choice="tiger"><span data-choice="tiger">Тигренок</span></div>
+        </div>
+      </div>
+      <div class="choice__btn back-green-btn js-choice-btn">Продолжить</div>
+    </div>
+    <div class="card js-animal js-home-close">
+      <div class="card__wrapper">
+        <div class="card__img"><img class="js-card__icon" alt="animal" src="img/bear.svg" data-choice="bear"><img
+            class="js-card__icon" alt="animal" src="img/tiger.svg" data-choice="tiger"><img class="js-card__icon"
+            alt="animal" src="img/cat.svg" data-choice="cat"><img class="js-card__icon" alt="animal" src="img/dog.svg"
+            data-choice="dog"></div>
+        <div class="card__poll poll">
+          <h3 class="poll__title">Укажите параметры питомца</h3>
+          <label class="poll__height poll__item"><span>Рост: </span><input class="poll__input" type="number" name="height"
+              required><span>см.</span></label>
+          <label class="poll__weight poll__item"><span>Вес: </span><input class="poll__input" type="number" name="weight"
+              required><span>кг.</span></label>
+          <label class="poll__name poll__item"><span>Имя: </span><input class="poll__input" type="text" name="name"
+              required></label>
+        </div>
+      </div>
+      <h2 class="card__title js-read-parameters">Определить питомца по параметрам</h2>
+      <div class="card__info js-card-info js-home-close">
+        <div class="card__breed"><span class="js-animal-kind">Порода</span><span> с весом </span><span
+            class="card__weight js-animal-weight">33-50</span><span>кг</span><span>, и ростом </span><span
+            class="card__height js-animal-height">220-300</span><span>см</span></div>
+        <div class="back-green-btn card__btn js-card-btn">Смотреть фотографию</div>
+      </div>
+    </div>
+    <div class="photo js-photo js-home-close">
+      <h3 class="photo__title"><span>Перед вами фотография </span><span>"</span><span
+          class="photo__kind js-animal-kind">Порода</span><span>"</span></h3>
+      <div class="photo__wrapper">
+        <picture>
+          <source type="image/webp" srcset="img/amur_tiger.webp"><img class="js-photo-img" alt="tiger"
+            src="img/amur_tiger.jpg" data-photo="Малайский тигр"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/bengal_tiger.webp"><img class="js-photo-img" alt="tiger"
+            src="img/bengal_tiger.jpg" data-photo="Бенгальский тигр"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/yorkshire_terrier.webp"><img class="js-photo-img" alt="dog"
+            src="img/yorkshire_terrier.jpg" data-photo="Йоркширский терьер"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/jack_russell_terrier.webp"><img class="js-photo-img" alt="dog"
+            src="img/jack_russell_terrier.jpg" data-photo="Джек рассел терьер"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/corgi.webp"><img class="js-photo-img" alt="dog" src="img/corgi.jpg"
+            data-photo="Корги"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/australian_kelpie.webp"><img class="js-photo-img" alt="dog"
+            src="img/australian_kelpie.jpg" data-photo="Австралийский келпи"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/rottweiler.webp"><img class="js-photo-img" alt="dog"
+            src="img/rottweiler.jpg" data-photo="Ротвейлер"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/munchkin.webp"><img class="js-photo-img" alt="cat"
+            src="img/munchkin.jpg" data-photo="Манчкин"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/maine_coon.webp"><img class="js-photo-img" alt="cat"
+            src="img/maine_coon.jpg" data-photo="Мейн-кун"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/caracal.webp"><img class="js-photo-img" alt="cat" src="img/caracal.jpg"
+            data-photo="Каракал"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/european_brown_bear.webp"><img class="js-photo-img" alt="bear"
+            src="img/european_brown_bear.jpg" data-photo="Европейский бурый медведь"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/grizzly.webp"><img class="js-photo-img" alt="bear" src="img/grizzly.jpg"
+            data-photo="Гризли"></picture>
+        <picture>
+          <source type="image/webp" srcset="img/japanese_brown_bear.webp"><img class="js-photo-img" alt="bear" src="img/japanese_brown_bear.jpg"
+            data-photo="Японский бурый медведь"></picture>
+      </div>
+      <p class="photo__name js-photo-name">Имя</p><a class="photo__btn back-green-btn js-photo-btn" href=""
+        download>Скачать фотографию</a>
+    </div>
+    <div class="popup-fade popup">
+      <div class="popup__close js-popup-close"></div>
+      <div class="container">
+        <h2 class="popup__title">FAQ</h2>
+        <ol class="popup__list">
+          <li class="popup__item">Выбираем тип питомца</li>
+          <li class="popup__item">Указываем параметры в допустимом диапазоне</li>
+          <li class="popup__item">Получаем предполагаемую породу питомца</li>
+          <li class="popup__item">Любуемся картинкой животного</li>
+          <li class="popup__item">Нажмите на лого, что бы вернуться к выбору животного</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
